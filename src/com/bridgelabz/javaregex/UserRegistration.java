@@ -10,10 +10,10 @@ public class UserRegistration {
 		String str = sc.nextLine();
 		String regex = "^?[A-Z][a-z]{2,25}";
 		
-		System.out.println(str.matches(regex));
+//		System.out.println(str.matches(regex));
 		
 		if(str.matches(regex)) {
-			System.out.println(str);
+			System.out.println("Username is : "+str);
 		}else {
 			System.out.println("Please enter Valid Username");
 		}
