@@ -17,7 +17,9 @@ public class UserRegistration {
 		System.out.println("Enter a Valid Phone Number :");
 		String phone = sc.nextLine();
 		String regex3 = "^[0-9]{2,5}\\s[0-9]{10}";
-		
+		System.out.println("Enter a Valid Password :");
+		String pass = sc.nextLine();
+		String regex4 = "^[a-zA-Z0-9]{8,}";
 		
 		if(str.matches(regex)) {
 			System.out.println("Username is : "+str);
@@ -39,6 +41,12 @@ public class UserRegistration {
 		
 		if(phone.matches(regex3)) {
 			System.out.println("Phone number is "+phone);
+		}else {
+			System.out.println("Invalid");
+		}
+		
+		if(pass.matches(regex4)) {
+			System.out.println("Password is Valid");
 		}else {
 			System.out.println("Invalid");
 		}
