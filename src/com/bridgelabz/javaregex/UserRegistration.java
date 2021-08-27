@@ -14,6 +14,10 @@ public class UserRegistration {
 		System.out.println("Enter a Valid Email :");
 		String email = sc.nextLine();
 		String regex2 = "^[a-z]{3,10}[.+][a-zA-Z]{0,10}[@][a-z]{2,10}(.+)$";
+		System.out.println("Enter a Valid Phone Number :");
+		String phone = sc.nextLine();
+		String regex3 = "^[0-9]{2,5}\\s[0-9]{10}";
+		
 		
 		if(str.matches(regex)) {
 			System.out.println("Username is : "+str);
@@ -29,6 +33,12 @@ public class UserRegistration {
 		
 		if(email.matches(regex2)) {
 			System.out.println("Email is : " +email);
+		}else {
+			System.out.println("Invalid");
+		}
+		
+		if(phone.matches(regex3)) {
+			System.out.println("Phone number is "+phone);
 		}else {
 			System.out.println("Invalid");
 		}
