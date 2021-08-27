@@ -19,7 +19,7 @@ public class UserRegistration {
 		String regex3 = "^[0-9]{2,5}\\s[0-9]{10}";
 		System.out.println("Enter a Valid Password :");
 		String pass = sc.nextLine();
-		String regex4 = "^[a-zA-Z0-9]{8,}";
+		String regex4 = "[a-zA-Z0-9]{8,}";
 		
 		if(str.matches(regex)) {
 			System.out.println("Username is : "+str);
